@@ -24,8 +24,7 @@ impl fmt::Debug for Slide {
 
 fn enter_to_go () {
     let mut stdin = std::io::stdin();
-    let mut buffer = String::new();
-    stdin.read_line(&mut buffer).unwrap();
+    stdin.read_line(&mut String::new()).unwrap();
 }
 
 fn read_slides (path: &str) {
